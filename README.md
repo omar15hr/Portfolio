@@ -1,4 +1,4 @@
-# Portafolio - Javier Rosales
+# Portafolio - Omar Hernández
 
 Bienvenido a mi portafolio!
 
