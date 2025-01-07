@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import TechnologyBadge from './TechnologyBadge'
 import ButtonLink from './ButtonLink'
 import GitHub from './icons/flat/GitHub'
