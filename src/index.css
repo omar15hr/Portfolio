@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    color-scheme: light dark;
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply p-2 bg-[#fafafa] dark:bg-[#000000] text-[#171717] dark:text-[#ededed];
+}
