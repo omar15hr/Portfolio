@@ -22,9 +22,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <a className='flex gap-1 hover:text-[#0068d6] dark:hover:text-[#52a8ff]' href='https://github.com/javier-rosales' target='_blank'>
+      <a className='flex gap-1 hover:text-[#0068d6] dark:hover:text-[#52a8ff]' href='https://github.com/omar15hr' target='_blank'>
         <GitHubIcon size='xs' />
-        javier-rosales
+        Omar Hernández
       </a>
     </footer>
   )

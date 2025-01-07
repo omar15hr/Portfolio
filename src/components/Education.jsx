@@ -3,50 +3,27 @@ import Section from './Section'
 import SectionTitle from './SectionTitle'
 import ButtonLink from './ButtonLink'
 import ExternalLinkIcon from './icons/flat/ExternalLink'
-import DocumentPdfIcon from './icons/flat/DocumentPdf'
 import { v4 as uuidv4 } from 'uuid'
 
 const linkIconSize = 'xs'
 
 const education = [
   {
-    title: 'Full Stack Open',
+    title: 'Devtalles',
     date: '2024',
-    description: 'Curso de Desarrollo Web Full Stack por la Universidad de Helsinki, Finlandia. Aquí reforcé mis conocimientos en React por el lado de Frontend, también aprendí Node.js y Express para el Backend, y MongoDB para las bases de datos.',
+    description: 'Realice cursos de desarrollo web donde aprendi React, Node.js, Express, MongoDB, TypeScript, Angular y sigo en el proceso de aprender otras tecnologías.',
     links: [
       {
-        icon: <DocumentPdfIcon size={linkIconSize} />,
-        href: '',
-        text: 'Certificado'
-      },
-      {
-        icon: <DocumentPdfIcon size={linkIconSize} />,
-        href: '',
-        text: 'Créditos universitarios'
-      },
-      {
         icon: <ExternalLinkIcon size={linkIconSize} />,
-        href: 'https://fullstackopen.com/en/',
-        text: 'Curso'
+        href: 'https://cursos.devtalles.com/',
+        text: 'Plataforma'
       }
     ]
   },
   {
-    title: 'The Odin Project',
-    date: '2023',
-    description: 'En este curso aprendí las bases de desarrollo web con HTML, CSS y especialmente JavaScript.',
-    links: [
-      {
-        icon: <ExternalLinkIcon size={linkIconSize} />,
-        href: 'https://www.theodinproject.com/',
-        text: 'Curso'
-      }
-    ]
-  },
-  {
-    title: 'Ingeniería en Sistemas Computacionales',
-    date: '2018 - 2023',
-    description: 'En el Tecnológico de Estudios Superiores de Cuautitlán Izcalli con especialidad en Diseño y Desarrollo de Software.'
+    title: 'Analista Programador Computacional',
+    date: '2021 - 2024',
+    description: 'En el Instituto Duoc UC. Sede de San Joaquín, ubicada en Santiago de Chile.'
   }
 ].map(item => {
   const newItem = { ...item, id: uuidv4() }
