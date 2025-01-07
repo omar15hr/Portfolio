@@ -1,10 +1,9 @@
+/* eslint-disable react/prop-types */
 import Section from './Section'
 import SectionTitle from './SectionTitle'
 import ButtonLink from './ButtonLink'
 import ExternalLinkIcon from './icons/flat/ExternalLink'
 import DocumentPdfIcon from './icons/flat/DocumentPdf'
-import fullStackOpenCertificate from '/documents/courses/full-stack-open-certificate.pdf'
-import fullStackOpenCredits from '/documents/courses/full-stack-open-credits.pdf'
 import { v4 as uuidv4 } from 'uuid'
 
 const linkIconSize = 'xs'
@@ -17,12 +16,12 @@ const education = [
     links: [
       {
         icon: <DocumentPdfIcon size={linkIconSize} />,
-        href: fullStackOpenCertificate,
+        href: '',
         text: 'Certificado'
       },
       {
         icon: <DocumentPdfIcon size={linkIconSize} />,
-        href: fullStackOpenCredits,
+        href: '',
         text: 'Créditos universitarios'
       },
       {

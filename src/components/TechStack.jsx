@@ -14,12 +14,11 @@ import GitIcon from './icons/Git'
 import GitHubIcon from './icons/GitHub'
 import TerminalIcon from './icons/Terminal'
 import NpmIcon from './icons/Npm'
-import AstroIcon from './icons/Astro'
 import ExpressIcon from './icons/Express'
 import NodeJsIcon from './icons/NodeJs'
 import MongoDbIcon from './icons/MongoDb'
-import MySqlIcon from './icons/MySql'
 import TypeScriptIcon from './icons/TypeScript'
+import AngularIcon from './icons/Angular'
 
 const iconSize = 'xl'
 
@@ -54,6 +53,14 @@ let techStack = {
       {
         name: 'Tailwind CSS',
         icon: <TailwindCssIcon size={iconSize} />
+      },
+      {
+        name: 'TypeScript',
+        icon: <TypeScriptIcon size={iconSize} />
+      },
+      {
+        name: 'Angular',
+        icon: <AngularIcon size={iconSize} />
       }
     ]
   },
@@ -78,17 +85,9 @@ let techStack = {
       }
     ]
   },
-  learning: {
-    displayName: 'Aprendiendo',
+  backend: {
+    displayName: 'Backend',
     items: [
-      {
-        name: 'TypeScript',
-        icon: <TypeScriptIcon size={iconSize} />
-      },
-      {
-        name: 'Astro',
-        icon: <AstroIcon size={iconSize} />
-      },
       {
         name: 'Express',
         icon: <ExpressIcon size={iconSize} />
@@ -101,10 +100,6 @@ let techStack = {
         name: 'MongoDB',
         icon: <MongoDbIcon size={iconSize} />
       },
-      {
-        name: 'MySQL',
-        icon: <MySqlIcon size={iconSize} />
-      }
     ]
   }
 }
@@ -115,6 +110,7 @@ Object.entries(techStack).forEach(([key, { items }]) => {
   })
 })
 
+// eslint-disable-next-line react/prop-types
 const Tab = ({ name, displayName, isActive, handleTabClick }) => {
   const classNames = clsx(
     'grow p-2 text-center cursor-pointer rounded-sm dark:text-[#a1a1a1]',
@@ -142,7 +138,7 @@ const TechStack = () => {
   
   return (
     <Section>
-      <SectionTitle title='Tech Stack' id='tech-stack' />
+      <SectionTitle title='Stack' id='tech-stack' />
       <ul className='flex rounded-md mb-6 p-1 bg-[#ebebeb] text-[#666666] dark:bg-[#1f1f1f]'>
         {Object.keys(techStack).map(tabName => (
           <Tab
